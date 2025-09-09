@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+  <header class="header">
+    <h2>Welcome to the Password Generator App!</h2>
+  </header>
+  <div class="container">
+    <h1>Password Generator</h1>
+    <div class="inputBox">
+        <input type="text" class="passBox" id ="passBox" disabled placeholder="Your Secure Password">
+        <span class="material-icons" id="copy">content_copy</span>
+    </div>
+<div class="sliderBox">
+    <input type="range" min="4" max="30" value="12" id="slider">
+    <label for="slider">Password Length</label><span id="lengthValue">12</span>
+
+    </div>
+
+    <div class="option-row">
+      <label for="uppercase">Include Uppercase</label>
+      <input type="checkbox" id="uppercase" />
+    </div>
+
+    <div class="option-row">
+      <label for="lowercase">Include Lowercase</label>
+      <input type="checkbox" id="lowercase" checked />
+    </div>
+
+    <div class="option-row">
+      <label for="numbers">Include Numbers</label>
+      <input type="checkbox" id="numbers" checked />
+    </div>
+
+    <div class="option-row">
+      <label for="symbols">Include Symbols</label>
+      <input type="checkbox" id="symbols" />
+    </div>
+
+    <button class="generatebtn" id="generate">Generate Password</button>
+  </div>
+  <div class="footer">
+    <p>&copy; 2025 Calculator App Made by Harsh Jhunjhunwala</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
